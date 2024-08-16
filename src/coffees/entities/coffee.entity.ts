@@ -12,6 +12,9 @@ export class Coffee {
   @Column()
   brand: string;
 
+  @Column()
+  recommendations: number;
+
   @JoinTable()
   @ManyToMany(
     type => Flavor, 
